@@ -100,10 +100,10 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                 if (!TextUtils.isEmpty(selection)) {
                     if (selection.equals(getString(R.string.supplier_amazon))) {
                         mSupplieName = InventoryEntry.SUPPLIER_AMAZON;
-                    } else if (selection.equals(getString(R.string.supplier_jarirr))) {
-                        mSupplieName = InventoryEntry.SUPPLIER_JARIRR;
-                    } else if (selection.equals(getString(R.string.supplier_obeikan))) {
-                        mSupplieName = InventoryEntry.SUPPLIER_OBEIKAN;
+                    } else if (selection.equals(getString(R.string.supplier_flipkart))) {
+                        mSupplieName = InventoryEntry.SUPPLIER_Flipkart;
+                    } else if (selection.equals(getString(R.string.supplier_snapdeal))) {
+                        mSupplieName = InventoryEntry.SUPPLIER_Snapdeal;
                     } else {
                         mSupplieName = InventoryEntry.SUPPLIER_UNKNOWN;
                     }
@@ -301,10 +301,10 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                 case InventoryEntry.SUPPLIER_AMAZON:
                     mProductSupplieNameSpinner.setSelection(1);
                     break;
-                case InventoryEntry.SUPPLIER_JARIRR:
+                case InventoryEntry.SUPPLIER_Flipkart:
                     mProductSupplieNameSpinner.setSelection(2);
                     break;
-                case InventoryEntry.SUPPLIER_OBEIKAN:
+                case InventoryEntry.SUPPLIER_Snapdeal:
                     mProductSupplieNameSpinner.setSelection(3);
                     break;
                 default:

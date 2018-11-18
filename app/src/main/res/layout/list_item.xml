@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
-                tools:text="product quantity" />
+                tools:text="       Product   quantity" />
         </LinearLayout>
     </LinearLayout>
 
@@ -57,7 +57,22 @@
                             android:id="@+id/sale_button"
                             style="@style/ListItembuttonstyle"
                             android:drawableLeft="@drawable/ic_shopping_cart_white_24dp"
-                            android:text="Sale" />
+                             />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/ListItemLinearLayoutsection2"
+                        android:layout_width="2dp"
+                        android:layout_marginLeft="@dimen/list_item_linearlayout_marginLeft">
+
+                        <Button
+                            android:id="@+id/phone_button"
+
+                            android:background="@color/colorPrimaryDark"
+                            android:drawableLeft="@drawable/ic_phone_white_24dp"
+                            android:focusable="false"
+
+                            style="@style/ListItembuttonstyle"
+                             />
                     </LinearLayout>
 
                     <LinearLayout
@@ -69,11 +84,12 @@
                             android:id="@+id/edit_button"
                             style="@style/ListItembuttonstyle"
                             android:drawableLeft="@drawable/ic_create_white_24dp"
-                            android:text="Edit" />
+                             />
 
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

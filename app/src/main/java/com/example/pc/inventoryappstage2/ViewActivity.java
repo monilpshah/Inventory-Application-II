@@ -103,11 +103,11 @@ public class ViewActivity extends AppCompatActivity implements LoaderManager.Loa
                 case InventoryEntry.SUPPLIER_AMAZON:
                     mProductSupplieNameSpinner.setText(getText(R.string.supplier_amazon));
                     break;
-                case InventoryEntry.SUPPLIER_JARIRR:
-                    mProductSupplieNameSpinner.setText(getText(R.string.supplier_jarirr));
+                case InventoryEntry.SUPPLIER_Flipkart:
+                    mProductSupplieNameSpinner.setText(getText(R.string.supplier_flipkart));
                     break;
-                case InventoryEntry.SUPPLIER_OBEIKAN:
-                    mProductSupplieNameSpinner.setText(getText(R.string.supplier_obeikan));
+                case InventoryEntry.SUPPLIER_Snapdeal:
+                    mProductSupplieNameSpinner.setText(getText(R.string.supplier_snapdeal));
                     break;
                 default:
                     mProductSupplieNameSpinner.setText(getText(R.string.supplier_unknown));

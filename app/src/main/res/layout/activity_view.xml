@@ -34,27 +34,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout style="@style/ListItemLinearLayoutsection1">
 
-        <LinearLayout style="@style/ListItemLinearLayoutsection2">
-
-            <TextView
-                style="@style/ProductViewTitleTextStyle"
-                android:text="@string/product_price" />
-        </LinearLayout>
-
-        <LinearLayout style="@style/ListItemLinearLayoutsection2">
-
-            <TextView
-                android:id="@+id/product_price_view_text"
-                style="@style/ProductViewdetailStyle" />
-
-            <TextView
-                style="@style/CurrencyStyle"
-                android:layout_marginLeft="16dp"
-                android:text="@string/product_price_currency" />
-        </LinearLayout>
-    </LinearLayout>
 
     <LinearLayout style="@style/ActivityViewLinearLayoutsection1">
 
@@ -81,7 +61,7 @@
                         android:id="@+id/increase_button"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@color/colorAccent"
+                        android:background="@color/colorPrimaryDark"
                         android:text="+"
                         android:textColor="#fff" />
                 </LinearLayout>
@@ -92,11 +72,29 @@
                         android:id="@+id/decrease_button"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:background="@color/colorAccent"
+                        android:background="@color/colorPrimaryDark"
                         android:text="-"
                         android:textColor="#fff" />
                 </LinearLayout>
             </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/ListItemLinearLayoutsection1">
+
+        <LinearLayout style="@style/ListItemLinearLayoutsection2">
+
+            <TextView
+                style="@style/ProductViewTitleTextStyle"
+                android:text="@string/product_price" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/ListItemLinearLayoutsection2">
+
+            <TextView
+                android:id="@+id/product_price_view_text"
+                style="@style/ProductViewdetailStyle" />
+
+
         </LinearLayout>
     </LinearLayout>
 
@@ -149,7 +147,7 @@
                         android:id="@+id/phone_button"
                         android:layout_width="35dp"
                         android:layout_height="40dp"
-                        android:background="@color/colorAccent"
+                        android:background="@color/colorPrimaryDark"
                         android:drawableLeft="@drawable/ic_phone_white_24dp"
                         android:focusable="false" />
                 </LinearLayout>

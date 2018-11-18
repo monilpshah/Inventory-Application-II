@@ -59,7 +59,7 @@ public class InventoryCursorAdapter extends CursorAdapter {
         });
 
         productNameTextView.setText(productID + " ) " + productName);
-        productPriceTextView.setText(context.getString(R.string.product_price) + " : " + productPrice + "  " + context.getString(R.string.product_price_currency));
+        productPriceTextView.setText(context.getString(R.string.product_price) + " : " + productPrice + "  " );
         productQuantityTextView.setText(context.getString(R.string.product_quantity) + " : " + productQuantity);
 
         Button productEditButton = view.findViewById(R.id.edit_button);

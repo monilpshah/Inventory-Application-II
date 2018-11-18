@@ -39,11 +39,11 @@ public class InventoryContract {
         // SUPPLIER_NAME LIST VALUES
         public final static int SUPPLIER_UNKNOWN = 0;
         public final static int SUPPLIER_AMAZON = 1;
-        public final static int SUPPLIER_JARIRR = 2;
-        public final static int SUPPLIER_OBEIKAN = 3;
+        public final static int SUPPLIER_Flipkart = 2;
+        public final static int SUPPLIER_Snapdeal = 3;
 
         public static boolean isValidSupplierName(int suppliername) {
-            if (suppliername == SUPPLIER_UNKNOWN || suppliername == SUPPLIER_AMAZON || suppliername == SUPPLIER_JARIRR || suppliername == SUPPLIER_OBEIKAN) {
+            if (suppliername == SUPPLIER_UNKNOWN || suppliername == SUPPLIER_AMAZON || suppliername == SUPPLIER_Flipkart|| suppliername == SUPPLIER_Snapdeal) {
                 return true;
             }
             return false;
