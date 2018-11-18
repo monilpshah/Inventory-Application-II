@@ -73,6 +73,18 @@ public class InventoryCursorAdapter extends CursorAdapter {
             }
         });
 
+        int supplierPhoneColumnIndex = cursor.getColumnIndex(InventoryEntry.COLUMN_PRODUCT_SUPPLIER_PHONE_NUMBER);
+        final int currentSupplierPhone = cursor.getInt(supplierPhoneColumnIndex);
+
+        Button phoneButton = view.findViewById(R.id.phone_button);
+        phoneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phone = String.valueOf(currentSupplierPhone);
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null));
+                context.startActivity(intent);
+            }
+        });
     }
 
 }
